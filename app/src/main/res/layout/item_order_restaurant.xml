@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/restaurantCoverCard"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:cardCornerRadius="16dp"
+            app:layout_constraintWidth_percent="0.3"
+            app:layout_constraintDimensionRatio="H,1:1"
+            android:layout_marginTop="@dimen/margin_medium_2">
+            <ImageView
+                android:id="@+id/restaurantCover"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_launcher_background"/>
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/restaurantTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/restaurantCoverCard"
+            app:layout_constraintTop_toTopOf="@id/restaurantCoverCard"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+            android:padding="@dimen/margin_medium"
+            android:textStyle="bold"
+            android:text="Hollywood Stars Cafe"/>
+
+        <ImageView
+            android:id="@+id/star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/restaurantTitle"
+            app:layout_constraintTop_toBottomOf="@id/restaurantTitle"
+            app:tint="@color/reddish_orange"
+            android:layout_marginStart="@dimen/margin_medium_2"
+            android:src="@drawable/ic_star_rate"/>
+
+        <TextView
+            android:id="@+id/rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_medium_2"
+            app:layout_constraintStart_toEndOf="@id/star"
+            app:layout_constraintTop_toTopOf="@id/star"
+            app:layout_constraintBottom_toBottomOf="@id/star"
+            android:textColor="@color/reddish_orange"
+            android:text="4.5"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_medium_2"
+            app:layout_constraintStart_toEndOf="@id/rating"
+            app:layout_constraintTop_toTopOf="@id/star"
+            app:layout_constraintBottom_toBottomOf="@id/star"
+            android:text="Cafe . Western Food" />
+
+        <ImageView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_location"
+            app:tint="@color/reddish_orange"
+            app:layout_constraintStart_toStartOf="@id/star"
+            app:layout_constraintTop_toBottomOf="@id/star"/>
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address pr blah"
+            android:layout_marginStart="@dimen/margin_medium_2"
+            app:layout_constraintStart_toEndOf="@id/location"
+            app:layout_constraintTop_toTopOf="@id/location"
+            app:layout_constraintBottom_toBottomOf="@id/location"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

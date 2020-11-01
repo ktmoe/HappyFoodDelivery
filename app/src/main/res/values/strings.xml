@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Happy Food Delivery</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="on_board_texts">
+        <item>Discover the best foods from over 1,000 restaurants.</item>
+        <item>Fast delivery to your home, office and wherever you want.</item>
+        <item>Real time tracking of your food on the app after ordered.</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string-array name="on_board_titles">
+        <item>Find foods you love</item>
+        <item>Fast Delivery</item>
+        <item>Live Tracking</item>
+    </string-array>
+</resources>
